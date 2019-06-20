@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="CategoriaSuite" parallel="false" >
+	<test name="CategoriaWebDriverTestChrome" enabled="true">
+		<parameter name="navegador" value="chrome"/>
+		<parameter name="rutaArchivo" value="C:\Data\DataCategoria01.xls"/>
+		<parameter name="fuenteDatos" value="BD"/>
+		<parameter name="remoto" value="0"/>
+		<classes>
+			<class name="pe.com.test.seleniumwd.CategoriaWebDriverTest" />
+		</classes>
+	</test>
+</suite>

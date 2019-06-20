@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [CategoriaSuite]">
+  <parameter name="navegador" value="chrome"/>
+  <parameter name="rutaArchivo" value="C:\Data\DataCategoria01.xls"/>
+  <parameter name="remoto" value="0"/>
+  <parameter name="fuenteDatos" value="BD"/>
+  <test name="CategoriaWebDriverTest">
+    <parameter name="navegador" value="chrome"/>
+    <parameter name="rutaArchivo" value="C:\Data\DataCategoria01.xls"/>
+    <parameter name="remoto" value="0"/>
+    <parameter name="fuenteDatos" value="BD"/>
+    <classes>
+      <class name="pe.com.test.seleniumwd.CategoriaWebDriverTest"/>
+    </classes>
+  </test> <!-- CategoriaWebDriverTest -->
+  <test name="CategoriaWebDriverTest(failed)">
+    <parameter name="navegador" value="chrome"/>
+    <parameter name="rutaArchivo" value="C:\Data\DataCategoria01.xls"/>
+    <parameter name="remoto" value="0"/>
+    <parameter name="fuenteDatos" value="BD"/>
+    <classes>
+      <class name="pe.com.test.seleniumwd.CategoriaWebDriverTest">
+        <methods>
+          <include name="insertarCategoria" invocation-numbers="0"/>
+          <include name="tearDown"/>
+          <include name="inicioClase"/>
+        </methods>
+      </class> <!-- pe.com.test.seleniumwd.CategoriaWebDriverTest -->
+    </classes>
+  </test> <!-- CategoriaWebDriverTest(failed) -->
+</suite> <!-- Failed suite [CategoriaSuite] -->
